@@ -19,14 +19,15 @@ It is built on Natural Systems Mechanics, Equilibrium, and the Canonical Substra
 ## Repository Structure
 
 docs/
-├── specification/          ← Place the Master System Specification Document here
-├── directive/              ← Place the Implementation & Operational Directive (IOD) here
-└── reference/              ← Reserved for additional system documents
+├── specification/
+├── directive/
+└── reference/
 
 ## Documents
 
 - `docs/specification/` — SEMANTICORE OS (SCOS) - MASTER SYSTEM SPECIFICATION DOCUMENT
 - `docs/directive/` — SEMANTICORE OS (SCOS): IMPLEMENTATION & OPERATIONAL DIRECTIVE (IOD)
+- `docs/reference/` — CANONICAL SUBSTRATE ENGINE (CSE) - DETERMINISTIC LOGIC ENGINE 
 
 ## License
 
