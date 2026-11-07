@@ -1,46 +1,77 @@
 ================================================================================
-SEMANTICORE OS (SCOS): IMPLEMENTATION & OPERATIONAL DIRECTIVE (IOD)
+SEMANTICORE OS (SCOS) - MASTER SYSTEM SPECIFICATION DOCUMENT
 ================================================================================
 
-1. ARCHITECTURAL PHILOSOPHY & DESIGN CONSTRAINTS
+1. CORE IDENTITY & ARCHITECTURAL SUBSTRATE
 --------------------------------------------------------------------------------
-* Anti-Bloat Mandate: SCOS rejects all modern software bloat, abstraction layers, garbage collection, and stochastic AI dependencies. 
-* Core Isomorphism: The system is built on a recursive, self-similar architecture where every tier maps directly to the Canonical Substrate Engine (CSE) triadic formula (+1, 0, -1). Instead of code duplication, system components reference tier-depth arithmetic and cross-dependencies.
-* Portability Paradigm: The core execution engine is fundamentally 32-bit at its structural level, wrapped in an x86_64 modern execution shell, ensuring seamless future portability to vintage or resource-constrained 32-bit hardware.
+* System Name: SemantiCore OS (SCOS)
+* Classification: Completely independent, bare-metal substrate-logic operating system (Not derived from Windows, Apple, Google, or Linux).
+* Target Hardware: x86_64 architecture (with a 32-bit core design for future legacy/vintage hardware portability).
+* Implementation Language: C.
+* Foundational Model: Natural Systems Mechanics, Equilibrium, and the Canonical Substrate Engine (CSE).
 
-2. MEMORY & STORAGE ISOMORPHIC TOPOLOGY
+2. DETERMINISTIC INTERACTION ENGINE (DIE)
 --------------------------------------------------------------------------------
-Memory and storage follow an identical, non-fragmented Nest hierarchy to eliminate translation overhead and maintain equilibrium:
-* Nest 0 (Root / Kernel): Primary system primitives, core ledger, and state transition gatekeeper.
-* Nest 1 (Terminal): Direct interaction pipe and command-line execution layer.
-* Nest 2 (Drivers): Quarantined driver container interface.
-* Nest 3 (GUI): Presentation layer, display management, and windowing frames.
-* Nest 4 (Applications): Hermetically isolated user-space application containers.
-* Data Packaging: System knowledge, WordNet, Wikipedia, and Shapenet bins are pre-compiled into uniform 4MB non-padded binary chunks optimized for static RAM mapping and CPU cache equilibrium.
+* Classification: Built from CSE. Strictly non-AI, non-AGI, non-LLM, and GPU-independent. Operates as a symbolic, deterministic table-lookup engine.
+* Knowledge Base: Mined tabular binary files derived from English WordNet and Wikipedia dumps for linguistics and empirical data.
+* Data Packaging: All knowledge and asset bins are baked into uniform 4MB non-padded chunks optimized for dynamic CPU cache/RAM equilibrium management and vintage hardware.
+* Security & Reliability: 100% deterministic execution; zero hallucinations; completely immune to prompt-injection jailbreaks.
+* Presentation Layer: Customizable personality skin prose files providing pattern-matched warmth, artistry, and tone (with multiple default options available). Serves as the core interaction bridge between the OS and the user.
 
-3. LINGUISTICS, PARSING, & VALENCE CLOSURE
+3. LINGUISTICS & SUBSTRATE COMPUTATION MODEL
 --------------------------------------------------------------------------------
-* Glyphic Mapping: User input strings are converted into computational algebraic primitives.
-* Active Whiteboard (AW): The dedicated memory workspace where input equations and system operations are registered.
-* Stoichiometric Valence Closure: Commands, system calls, and inputs must achieve a fully balanced algebraic equation state on the Active Whiteboard. 
-* Execution Rule: If an input contains ambiguities, typos, or fails valence closure, execution halts instantly and halts for explicit clarification. No probabilistic guessing or stochastic completion is permitted.
+* Communication Logic: Inspired by TCP/IP combined with computational universal linguistics laws.
+* English Mechanics: Governed by brute-force computational linguistics laws.
+* Glyphic Mapping: Alphabets and punctuation treated as physical glyphs converted directly into algebra.
+* Chemical Analogy (Valence Bonding): 
+  - Alphabets = Atoms
+  - Words = Elements
+  - Sentences = Compounds
+  - Discourse = Reactions
+  - All operations are strictly computational and must always form balanced equations.
+* Active Whiteboard (AW): 
+  - Functions as the user input, execution, and problem-solving workspace stored in memory and tracked continuously by DIE.
+* Interaction Protocol:
+  - DIE pattern-matches from tabular bins to compute user intent.
+  - If typos or ambiguities occur, DIE halts execution and requests explicit clarification.
+  - **Acceptance Criterion:** Commands are accepted only when intent achieves **Strict Stoichiometric Valence Closure** (fully balanced algebraic equation state on the Active Whiteboard).
+  - Universal Rollback: DIE maintains the capability to instantly roll back any executed commands.
 
-4. KERNEL GATEKEEPING & SYSTEM CALL PROTOCOL
+4. DRIVER ARCHITECTURE & HARDWARE SANDBOXING
 --------------------------------------------------------------------------------
-* The Kernel as Gatekeeper: The kernel does not act as a messy, monolithic manager. It functions strictly as a ledger-validating arbiter enforcing state transitions.
-* Boundary Enforcement: Applications and drivers operate inside strict memory rings protected by MMU/IOMMU barriers. 
-* State Rebalancing / Rollback: When a quarantined process faults or fails valence closure, the kernel triggers a local ground-state flush ([Kernel-0]) and rolls back the execution state to the last verified balanced equation on the Active Whiteboard, never risking Nest 0.
+* Isolation Boundary: Proprietary C-based binary drivers are treated strictly as **disposable guest containers and quarantined state transducers**, never as core system dependencies. SCOS relies on native ATA/NVMe substrate paths.
+* Sandboxing & Isolation: Drivers run in isolated user-space rings (protected by x86_64 MMU/IOMMU) to prevent system-wide memory contamination.
+* Fail-Safe Recovery: If a sandboxed driver crashes or faults, the failure is trapped, the driver container is terminated, and SCOS drops execution directly back to the bare-metal SCOS terminal prompt without a kernel panic.
 
-5. HARDWARE ISOLATION & DRIVER SANDBOXING
+5. GUI & APPLICATION ENVIRONMENT
 --------------------------------------------------------------------------------
-* Quarantined State Transducers: Proprietary C-based binary drivers are treated strictly as disposable guest containers. SCOS relies on native ATA/NVMe substrate paths.
-* Fail-Safe Fault Trapping: If a sandboxed driver crashes, the container is terminated, and execution drops safely back to the bare-metal SCOS terminal prompt without triggering a kernel panic.
-* Linux Compatibility Sandbox: Optional sandboxed Linux emulation environments are strictly fenced off as external guests, allowing users to host standard server software or legacy binaries without contaminating the core CSE ledger.
+* Desktop Interface: Standard GUI featuring a taskbar, menus, and mouse/keyboard support.
+* Persistent DIE Input: A permanent Deterministic Interaction Engine input is embedded directly in the taskbar for system-wide semantic command and control.
+* Built-In Applications: Includes native calculator, text editor, browser, and other utilities (custom or open-source).
 
-6. DEVELOPER RESPONSIBILITY & NATIVE EXTENSIBILITY
+6. DIE CODE TRANSDUCER & OPEN-SOURCE SOFTWARE
 --------------------------------------------------------------------------------
-* Uncompromising Purity: SCOS provides no native POSIX compatibility layers, translation shims, or developer hand-holding for legacy code.
-* Native SCOS Development: Engineers seeking real-time determinism, absolute latency predictability, and zero-jitter performance must write native C code structured around the CSE triadic framework and stoichiometric valence closure.
-* External Engine Isolation: Any optional AI tools or external diagnostic hooks reside strictly outside the CSE ledger and possess zero write-access to DIE or the Active Whiteboard.
+* Code Ingestion: Users can search for and download open-source software code.
+* Code Transducer: DIE utilizes formal syntax mapping rules and algebraic substitution to translate foreign code structures and system calls into clean, native SCOS C code without stochastic AI generation.
+* Compilation: Transduced code compiles directly into native SCOS binaries that are easily shareable across SCOS users.
+
+7. TEMPLATE-BASED MODULAR APP BUILDER & CODECS
+--------------------------------------------------------------------------------
+* App Templates: Pre-verified, modular C-based application templates with strict structural valences.
+* Fine-Tuning: Users specify modifications on the Active Whiteboard, and DIE applies deterministic algebraic parameter adjustments to recompile the app.
+* Codecs & Interoperability: Downloadable open-source codecs and format dependencies allow SCOS to ingest and export standard document/file formats via transducer mapping.
+
+8. SHAPENET, MULTIMEDIA, & GAME GENERATION
+--------------------------------------------------------------------------------
+* Shapenet Bins: WordNet-indexed geometric and structural primitives mined and structured into tabular binary bins (4MB non-padded chunks).
+* Procedural Multimedia Engine: CPU-driven procedural rendering translates text descriptions into geometric shapes, vector illustrations, and multimedia assets deterministically.
+* Deterministic Game Assembly: Users can create 2D and 3D games from text input by combining pre-verified game engine templates, Shapenet asset bins, and algebraic rule configurations into native SCOS binaries.
+
+9. HARDWARE ACCELERATION & DISTRIBUTION
+--------------------------------------------------------------------------------
+* Binary Distribution: Files, apps, and games built on SCOS are compiled as native C binaries, making them fully shareable and cross-compatible among SCOS users.
+* GPU Utilization: The physical GPU is utilized for high-performance video output, rendering, and game graphics, while DIE remains CPU-bound and deterministic.
+* Optional AI/DL Isolation: Users may optionally attach external engines or AI tools, but **any such external engine resides strictly outside the CSE ledger** and has zero write access to DIE or the Active Whiteboard, preserving strict determinism and injection immunity.
 
 ================================================================================
+
